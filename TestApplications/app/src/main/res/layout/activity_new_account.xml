@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ryan.testapplications.NewAccount"
+    android:background="@color/material_blue_grey_900"
+    android:clickable="false">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEntry"
+        android:enabled="true"
+        android:editable="true"
+        android:clickable="true"
+        android:inputType="textPersonName|text"
+        android:text="Name"
+        android:textColor="#ffffffff"
+        android:layout_above="@+id/IDEntry"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="63dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/IDEntry"
+        android:enabled="true"
+        android:editable="true"
+        android:clickable="true"
+        android:inputType="textPersonName|text"
+        android:text="Student ID"
+        android:textColor="#ffffffff"
+        android:textIsSelectable="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordEntry"
+        android:enabled="true"
+        android:editable="true"
+        android:clickable="true"
+        android:inputType="textEmailAddress|textPersonName|text"
+        android:text="Password"
+        android:textColor="#ffffffff"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/IDEntry"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create an Account"
+        android:id="@+id/newAccountTitle"
+        android:layout_marginTop="44dp"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick = "newAccount"
+        android:id="@+id/submitButton"
+        android:layout_below="@+id/passwordEntry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+</RelativeLayout>

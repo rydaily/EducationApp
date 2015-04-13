@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.ryan.testapplications.Login"
+    android:background="@color/material_blue_grey_900">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Login"
+        android:layout_marginTop="25dp"
+        android:editable="false"
+        android:clickable="true"
+        android:text="Login"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/abc_text_size_display_1_material"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_marginTop="23dp"
+        android:editable="true"
+        android:text="Enter Name"
+        android:textColor="#ffffffff"
+        android:inputType="text"
+        android:layout_below="@+id/Login"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_alignRight="@+id/Password"
+        android:layout_alignEnd="@+id/Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/Password"
+        android:textColor="#ffffffff"
+        android:text="Password"
+        android:enabled="true"
+        android:editable="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick = "CheckLogin"
+        android:id="@+id/submitLogin"
+        android:textColor="#ffffffff"
+        android:background="@color/secondary_text_disabled_material_dark"
+        android:layout_below="@+id/Password"
+        android:layout_alignRight="@+id/Login"
+        android:layout_alignEnd="@+id/Login"
+        android:layout_marginTop="27dp"
+        android:layout_alignLeft="@+id/Login"
+        android:layout_alignStart="@+id/Login" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create an Account"
+        android:onClick = "CreateAccount"
+        android:id="@+id/CreateButton"
+        android:textColor="#ffffffff"
+        android:background="@color/secondary_text_disabled_material_dark"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/submitLogin"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

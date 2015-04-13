@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Test Applications</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ShowMsg">Message</string>
+    <string name="title_activity_activity2">Activity2</string>
+    <string name="title_activity_new_account">NewAccount</string>
+    <string name="title_activity_join_class">JoinClass</string>
+    <string name="title_activity_my_class_list">MyClassList</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_classroom">Classroom</string>
+
+</resources>
