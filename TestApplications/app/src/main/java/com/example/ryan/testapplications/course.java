@@ -41,7 +41,6 @@ public class course {
                 if(cID == s.getCourseID()){
                     return s;
                 }
-                return null;
             }
         }
         return null;
@@ -56,7 +55,6 @@ public class course {
                 if(cID == s.getCourseID()){
                     return i;
                 }
-                return -1;
             }
         }
         return -1;

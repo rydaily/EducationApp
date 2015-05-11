@@ -45,12 +45,12 @@ public class Classroom extends ActionBarActivity {
         Toast toast = Toast.makeText(getApplicationContext(),"Help!", Toast.LENGTH_SHORT);
         toast.show();
     }
-
-    @Override
-    public void onBackPressed() {
-        Toast toast = Toast.makeText(getApplicationContext(),"Phone is Locked", Toast.LENGTH_SHORT);
-        toast.show();
-    }
+//      uncomment this function if you want to lock the back button
+//    @Override
+//    public void onBackPressed() {
+//        Toast toast = Toast.makeText(getApplicationContext(),"The Phone Is Locked", Toast.LENGTH_SHORT);
+//        toast.show();
+//    }
 
     @Override
     public void onPause(){
@@ -58,7 +58,7 @@ public class Classroom extends ActionBarActivity {
         // Send teacher a message that a student has quit the app
 
         super.onPause();
-        Toast toast = Toast.makeText(getApplicationContext(),"Student Has Quit the App", Toast.LENGTH_SHORT);
+        Toast toast = Toast.makeText(getApplicationContext(),"Student Has Left the Classroom", Toast.LENGTH_SHORT);
         toast.show();
     }
 
